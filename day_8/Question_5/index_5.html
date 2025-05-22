@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Methods Challenge</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+   </style>
+</head>
+<body>
+    <h1>Array Methods Challenge</h1>
+    <p>Original array: <span id="original"></span></p>
+    <p>Squares of even numbers: <span id="result"></span></p>
+     <script>
+        window.onload = function() {
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            
+            const squaresOfEvens = numbers
+                .filter(num => num % 2 === 0)
+                .map(evenNum => evenNum ** 2);
+            
+            document.getElementById('original').textContent = numbers.join(', ');
+            document.getElementById('result').textContent = squaresOfEvens.join(', ');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    color: #333;
+    box-sizing: border-box;
+}
+
+.weather-app {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0; 
+    overflow: hidden;
+}
+
+.search-bar {
+    display: flex;
+    padding: 15px;
+    background: #4285f4;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #4285f4;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-weather {
+    padding: 25px;
+    text-align: center;
+}
+
+.location h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.location .date {
+    color: #666;
+    margin: 5px 0 20px;
+}
+
+.weather-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.temp-value {
+    font-weight: 700;
+}
+
+.weather-icon i {
+    font-size: 60px;
+    color: #4285f4;
+}
+
+.weather-desc {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f8f9fa;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-item i {
+    font-size: 24px;
+    color: #4285f4;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-item span {
+    font-weight: 600;
+}
+
+.detail-item p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.forecast {
+    padding: 20px;
+}
+
+.forecast h2 {
+    font-size: 18px;
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    text-align: center;
+    flex: 1;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+}
+
+.forecast-day i {
+    font-size: 24px;
+    color: #4285f4;
+    margin: 5px 0;
+}

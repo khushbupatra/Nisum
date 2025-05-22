@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Class</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+   </style>
+</head>
+<body>
+    <h1>Car Acceleration</h1>
+    <button id="accelerateBtn">Accelerate</button>
+    <div id="output"></div>
+     <script>
+        class Car {
+            constructor(brand) {
+                this.brand = brand;
+                this.speed = 0;
+            }
+
+            accelerate() {
+                this.speed += 10;
+                console.log(`${this.brand} is accelerating. Current speed: ${this.speed} km/h`);
+                document.getElementById('output').innerHTML += 
+                    `<p>${this.brand} is accelerating. Current speed: ${this.speed} km/h</p>`;
+            }
+        }
+
+        window.onload = function() {
+            const myCar = new Car('Toyota');
+            document.getElementById('accelerateBtn').onclick = function() {
+                myCar.accelerate();
+            };
+        };
+    </script>
+</body>
+</html>
