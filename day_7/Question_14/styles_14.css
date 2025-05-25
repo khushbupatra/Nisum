@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #CC313D;
+    margin: 0;
+}
+
+.transform-box {
+    width: 200px;
+    height: 200px;
+    background-color: #F7C5CC;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.transform-box:hover {
+    transform: rotate(15deg) scale(1.1);
+    background-color: #FFEAEC;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}

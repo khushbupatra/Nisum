@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  background: #d65124;
+}
+
+nav li a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+nav li a:hover {
+  background: #571803b6;
+}
+
+section {
+  padding: 2rem;
+  display: none;
+}
+
+section.active {
+  display: block;
+}

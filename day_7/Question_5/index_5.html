@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local weather forecast application">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles_5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header class="search-bar">
+            <input type="text" placeholder="Search city..." class="search-input">
+            <button class="search-btn"><i class="wi wi-day-sunny"></i></button>
+        </header>
+
+        <main>
+            <section class="current-weather">
+                <div class="location">
+                    <h1>New York, NY</h1>
+                    <p class="date">Monday, June 10</p>
+                </div>
+                <div class="weather-display">
+                    <div class="temperature">
+                        <span class="temp-value">72</span>
+                        <span class="temp-unit">°F</span>
+                    </div>
+                    <div class="weather-icon">
+                        <i class="wi wi-day-cloudy-high"></i>
+                    </div>
+                </div>
+                <p class="weather-desc">Partly Cloudy</p>
+            </section>
+
+            <section class="weather-details">
+                <div class="detail-item">
+                    <i class="wi wi-strong-wind"></i>
+                    <span>12 mph</span>
+                    <p>Wind</p>
+                </div>
+                <div class="detail-item">
+                    <i class="wi wi-humidity"></i>
+                    <span>65%</span>
+                    <p>Humidity</p>
+                </div>
+                <div class="detail-item">
+                    <i class="wi wi-barometer"></i>
+                    <span>29.8 in</span>
+                    <p>Pressure</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-grid">
+                    <div class="forecast-day">
+                        <p>Tue</p>
+                        <i class="wi wi-day-sunny"></i>
+                        <p>74°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Wed</p>
+                        <i class="wi wi-day-cloudy"></i>
+                        <p>70°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Thu</p>
+                        <i class="wi wi-rain"></i>
+                        <p>68°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Fri</p>
+                        <i class="wi wi-day-sunny"></i>
+                        <p>76°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Sat</p>
+                        <i class="wi wi-night-clear"></i>
+                        <p>72°F</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
