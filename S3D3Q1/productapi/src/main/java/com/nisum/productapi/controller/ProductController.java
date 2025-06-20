@@ -18,14 +18,12 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    // GET /api/products - Get all products
     @GetMapping
     public ResponseEntity<List<Product>> getAllProducts() {
         List<Product> products = productService.getAllProducts();
         return ResponseEntity.ok(products);
     }
 
-    // GET /api/products/{id} - Get product by ID
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable Long id) {
         Optional<Product> product = productService.getProductById(id);
@@ -33,14 +31,12 @@ public class ProductController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // POST /api/products - Create new product
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
         Product createdProduct = productService.createProduct(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct);
     }
 
-    // PUT /api/products/{id} - Update existing product
     @PutMapping("/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody Product product) {
         Optional<Product> updatedProduct = productService.updateProduct(id, product);
@@ -48,7 +44,6 @@ public class ProductController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // DELETE /api/products/{id} - Delete product
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         boolean deleted = productService.deleteProduct(id);
