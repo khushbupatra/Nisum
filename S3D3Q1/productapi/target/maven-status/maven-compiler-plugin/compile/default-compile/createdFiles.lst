@@ -1,0 +1,4 @@
+com\nisum\productapi\model\Product.class
+com\nisum\productapi\controller\ProductController.class
+com\nisum\productapi\ProductapiApplication.class
+com\nisum\productapi\service\ProductService.class
