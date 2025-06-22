@@ -1,0 +1,103 @@
+/* Base Styles */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.app-header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.app-header a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Todo Section */
+.todo-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* Infinite Scroll */
+.loader {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Wishlist Button */
+.wishlist-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark Theme Styles */
+body.dark-theme .app-header {
+  border-bottom-color: #444;
+}
+
+body.dark-theme .app-header a:hover {
+  background-color: #333;
+}
+
+body.dark-theme .todo-section {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-header nav {
+    margin-top: 15px;
+  }
+}
