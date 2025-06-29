@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.nisum.order_service.OrderServiceApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.981 s -- in com.nisum.order_service.OrderServiceApplicationTests
