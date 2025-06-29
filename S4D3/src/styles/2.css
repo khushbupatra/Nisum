@@ -1,0 +1,11 @@
+.theme-header {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.theme-box {
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 16px;
+  border: 1px solid #ccc;
+}

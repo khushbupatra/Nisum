@@ -1,0 +1,13 @@
+.user-dashboard {
+  padding: 24px;
+  background: #e8f4f8;
+  border-radius: 8px;
+}
+
+.user-dashboard h2 {
+  margin-bottom: 12px;
+}
+
+.user-dashboard button {
+  margin-top: 8px;
+}
