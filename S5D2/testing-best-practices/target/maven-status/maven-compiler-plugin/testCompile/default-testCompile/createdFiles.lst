@@ -1,0 +1,6 @@
+com\example\testing\integration\BookIntegrationTest.class
+com\example\testing\TestingBestPracticesApplicationTests.class
+com\example\testing\TestTestingBestPracticesApplication.class
+com\example\testing\controller\BookControllerTest.class
+com\example\testing\container\BookContainerTest.class
+com\example\testing\TestcontainersConfiguration.class
