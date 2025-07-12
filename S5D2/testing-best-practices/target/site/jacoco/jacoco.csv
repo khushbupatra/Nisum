@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+testing-best-practices,com.example.testing.service,BookService,6,10,0,0,1,2,1,2,1,2
+testing-best-practices,com.example.testing,TestingBestPracticesApplication,5,3,0,0,2,1,1,1,1,1
+testing-best-practices,com.example.testing.controller,BookController,5,10,0,0,1,2,1,2,1,2
+testing-best-practices,com.example.testing.entity,Book,147,24,30,0,2,5,23,5,8,5
+testing-best-practices,com.example.testing.entity,Book.BookBuilder,36,0,0,0,1,0,6,0,6,0
